@@ -15,16 +15,16 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-cream/10 bg-footer/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-black">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
-        <a href="#inicio" className="flex items-center gap-2.5">
+        <a href="#inicio" className="flex items-center gap-3">
           <Image
             src="/images/logo-mark-white.png"
             alt=""
-            width={26}
-            height={32}
+            width={35}
+            height={44}
             priority
-            className="h-8 w-auto sm:h-9"
+            className="h-10 w-auto sm:h-11"
           />
           <span className="font-serif text-2xl font-medium tracking-tight text-cream">
             {siteConfig.businessName}
@@ -93,7 +93,7 @@ export default function Header() {
         <nav
           id="mobile-nav"
           aria-label="Navegación móvil"
-          className="flex flex-col border-t border-cream/10 bg-footer px-5 pb-6 pt-2 md:hidden"
+          className="flex flex-col border-t border-white/10 bg-black px-5 pb-6 pt-2 md:hidden"
         >
           {navLinks.map((link) => (
             <a
