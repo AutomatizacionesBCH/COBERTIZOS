@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { whatsappHref } from "@/lib/site-config";
 
 export default function Hero() {
@@ -7,14 +6,21 @@ export default function Hero() {
       id="inicio"
       className="relative flex min-h-[88vh] items-center overflow-hidden"
     >
-      <Image
-        src="/images/hero-cobertizo.jpeg"
-        alt="Cobertizo curvo de acero y madera con estacionamiento techado"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      {/*
+        Dirección de arte: en mobile se muestra otra foto que en desktop, así
+        que se usa <picture> en vez de next/image para que el navegador
+        descargue solo la imagen del breakpoint activo (no ambas).
+      */}
+      <picture>
+        <source media="(max-width: 639px)" srcSet="/images/estacionamiento-carport.jpeg" />
+        <source media="(min-width: 640px)" srcSet="/images/hero-cobertizo.jpeg" />
+        <img
+          src="/images/hero-cobertizo.jpeg"
+          alt="Cobertizo de acero y madera con estacionamiento techado"
+          fetchPriority="high"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </picture>
       <div
         className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/55 to-charcoal/20"
         aria-hidden="true"
