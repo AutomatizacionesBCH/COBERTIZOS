@@ -1,7 +1,7 @@
 // Datos centrales del negocio. Cambia aquí el nombre, teléfono y enlaces
 // para actualizarlos en todo el sitio.
 export const siteConfig = {
-  businessName: "Cobertizos Alba",
+  businessName: "MAULFER CONSTRUCTORES",
   phoneDisplay: "+56 9 0000 0000",
   phoneHref: "tel:+56900000000",
   whatsappNumber: "56900000000",

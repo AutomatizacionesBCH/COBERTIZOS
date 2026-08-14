@@ -4,6 +4,7 @@ import "./globals.css";
 import { QuotePrefillProvider } from "@/context/QuotePrefillContext";
 import Chatbot from "@/components/Chatbot";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { siteConfig } from "@/lib/site-config";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -24,15 +25,15 @@ const siteUrl = "https://cobertizosalba.cl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Cobertizos Alba | Cobertizos a medida en acero y madera",
+  title: `${siteConfig.businessName} | Cobertizos a medida en acero y madera`,
   description:
     "Diseñamos y construimos cobertizos a medida para terrazas, estacionamientos y quinchos, con precisión técnica y estética arquitectónica. Cotiza tu proyecto sin costo.",
   openGraph: {
-    title: "Cobertizos Alba | Cobertizos a medida en acero y madera",
+    title: `${siteConfig.businessName} | Cobertizos a medida en acero y madera`,
     description:
       "Diseñamos y construimos cobertizos a medida para terrazas, estacionamientos y quinchos, con precisión técnica y estética arquitectónica.",
     url: siteUrl,
-    siteName: "Cobertizos Alba",
+    siteName: siteConfig.businessName,
     locale: "es_CL",
     type: "website",
   },
