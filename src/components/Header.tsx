@@ -15,18 +15,18 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-charcoal/10 bg-cream/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-cream/10 bg-footer/95 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
         <a href="#inicio" className="flex items-center gap-2.5">
           <Image
-            src="/images/logo-mark.png"
+            src="/images/logo-mark-white.png"
             alt=""
-            width={32}
-            height={39}
+            width={26}
+            height={32}
             priority
             className="h-8 w-auto sm:h-9"
           />
-          <span className="font-serif text-2xl font-medium tracking-tight text-charcoal">
+          <span className="font-serif text-2xl font-medium tracking-tight text-cream">
             {siteConfig.businessName}
           </span>
         </a>
@@ -39,7 +39,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[15px] font-medium text-charcoal-soft transition-colors hover:text-accent"
+              className="text-[15px] font-medium text-cream/80 transition-colors hover:text-[#e2794f]"
             >
               {link.label}
             </a>
@@ -49,7 +49,7 @@ export default function Header() {
         <div className="hidden items-center gap-6 md:flex">
           <a
             href={siteConfig.phoneHref}
-            className="text-[15px] font-medium text-charcoal-soft transition-colors hover:text-accent"
+            className="text-[15px] font-medium text-cream/80 transition-colors hover:text-[#e2794f]"
           >
             {siteConfig.phoneDisplay}
           </a>
@@ -63,7 +63,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="flex h-11 w-11 items-center justify-center rounded-sm text-charcoal md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-sm text-cream md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
@@ -93,21 +93,21 @@ export default function Header() {
         <nav
           id="mobile-nav"
           aria-label="Navegación móvil"
-          className="flex flex-col border-t border-charcoal/10 bg-cream px-5 pb-6 pt-2 md:hidden"
+          className="flex flex-col border-t border-cream/10 bg-footer px-5 pb-6 pt-2 md:hidden"
         >
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="flex min-h-11 items-center border-b border-charcoal/5 text-base font-medium text-charcoal"
+              className="flex min-h-11 items-center border-b border-cream/10 text-base font-medium text-cream"
             >
               {link.label}
             </a>
           ))}
           <a
             href={siteConfig.phoneHref}
-            className="flex min-h-11 items-center border-b border-charcoal/5 text-base font-medium text-charcoal"
+            className="flex min-h-11 items-center border-b border-cream/10 text-base font-medium text-cream"
           >
             {siteConfig.phoneDisplay}
           </a>
