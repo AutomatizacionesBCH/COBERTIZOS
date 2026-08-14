@@ -13,9 +13,9 @@ export default function Hero() {
       */}
       <picture>
         <source media="(max-width: 639px)" srcSet="/images/banner-principal-movil.jpeg" />
-        <source media="(min-width: 640px)" srcSet="/images/hero-cobertizo.jpeg" />
+        <source media="(min-width: 640px)" srcSet="/images/principal-web-pc.jpeg" />
         <img
-          src="/images/hero-cobertizo.jpeg"
+          src="/images/principal-web-pc.jpeg"
           alt="Cobertizo de acero y madera con estacionamiento techado"
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
