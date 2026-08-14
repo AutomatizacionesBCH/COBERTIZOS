@@ -10,14 +10,14 @@ const services = [
   {
     title: "Estacionamientos",
     text: "Protección durable para vehículos, integrada al diseño de tu casa.",
-    image: "https://images.pexels.com/photos/33652618/pexels-photo-33652618.jpeg",
-    alt: "Estacionamiento techado con estructura de acero y madera",
+    image: "/images/estacionamiento-carport.jpeg",
+    alt: "Estacionamiento techado de acero y madera integrado a la fachada de una vivienda",
   },
   {
     title: "Quinchos",
     text: "El punto de encuentro familiar, techado con estilo.",
-    image: "https://images.pexels.com/photos/19648312/pexels-photo-19648312.jpeg",
-    alt: "Quincho techado con mesas y zona de fuego al aire libre",
+    image: "/images/quincho-patio.jpeg",
+    alt: "Quincho techado con estructura de acero junto a un patio con pasto",
   },
 ];
 

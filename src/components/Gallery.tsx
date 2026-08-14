@@ -6,8 +6,8 @@ const photos = [
     alt: "Terraza cubierta con pérgola de madera y acero",
   },
   {
-    src: "https://images.pexels.com/photos/7561178/pexels-photo-7561178.jpeg",
-    alt: "Carport de acero para dos vehículos",
+    src: "/images/estacionamiento-detalle.jpeg",
+    alt: "Detalle de estacionamiento techado con estructura de acero y madera",
   },
   {
     src: "https://images.pexels.com/photos/8583822/pexels-photo-8583822.jpeg",

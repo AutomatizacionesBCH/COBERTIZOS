@@ -8,8 +8,8 @@ export default function Hero() {
       className="relative flex min-h-[88vh] items-center overflow-hidden"
     >
       <Image
-        src="https://images.pexels.com/photos/34569496/pexels-photo-34569496.jpeg"
-        alt="Cobertizo de acero y madera al atardecer, integrado a una terraza"
+        src="/images/hero-cobertizo.jpeg"
+        alt="Cobertizo curvo de acero y madera con estacionamiento techado"
         fill
         priority
         sizes="100vw"
