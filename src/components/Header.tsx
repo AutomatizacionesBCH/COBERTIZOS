@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 
 const navLinks = [
@@ -16,11 +17,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-charcoal/10 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
-        <a
-          href="#inicio"
-          className="font-serif text-2xl font-medium tracking-tight text-charcoal"
-        >
-          {siteConfig.businessName}
+        <a href="#inicio" className="flex items-center gap-2.5">
+          <Image
+            src="/images/logo-mark.png"
+            alt=""
+            width={32}
+            height={39}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
+          <span className="font-serif text-2xl font-medium tracking-tight text-charcoal">
+            {siteConfig.businessName}
+          </span>
         </a>
 
         <nav

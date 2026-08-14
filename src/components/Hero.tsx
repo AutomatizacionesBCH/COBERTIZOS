@@ -12,7 +12,7 @@ export default function Hero() {
         descargue solo la imagen del breakpoint activo (no ambas).
       */}
       <picture>
-        <source media="(max-width: 639px)" srcSet="/images/estacionamiento-carport.jpeg" />
+        <source media="(max-width: 639px)" srcSet="/images/banner-principal-movil.jpeg" />
         <source media="(min-width: 640px)" srcSet="/images/hero-cobertizo.jpeg" />
         <img
           src="/images/hero-cobertizo.jpeg"
